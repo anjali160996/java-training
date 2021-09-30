@@ -1,0 +1,35 @@
+package org.studyeasy.laptop.components;  
+
+public class GraphicsCard {
+
+	private String brand;
+	private String memory;
+	private int series;
+	
+	public GraphicsCard() {
+		this.brand = "Nvidia";
+		this.memory = "2GB";
+		this.series = 940;	
+	}
+	public GraphicsCard(String brand, String memory, int series) {
+		super();
+		this.brand = brand;
+		this.memory = memory;
+		this.series = series;
+	}
+	@Override
+	public String toString() {
+		return "GraphicsCard [brand=" + brand + ", memory=" + memory + ", series=" + series + "]";
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public String getMemory() {
+		return memory;
+	}
+	public int getSeries() {
+		return series;
+	}
+	
+	
+}
